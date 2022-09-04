@@ -1,23 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Sample1.class.hpp                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: snovaes <snovaes@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/04 16:12:34 by snovaes           #+#    #+#             */
-/*   Updated: 2022/09/04 17:42:56 by snovaes          ###   ########.fr       */
+/*   Created: 2022/09/04 17:29:49 by snovaes           #+#    #+#             */
+/*   Updated: 2022/09/04 17:43:42 by snovaes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
-#include "Sample2.class.hpp"
-#include "Sample1.class.hpp"
+#ifndef SAMPLE1_CLASS_H
+# define SAMPLE1_CLASS_H
 
-int main(){
+class Sample1{
 
-	Sample1 instance1('a', 42, 4.2f);
-	Sample2 instance2('z', 13, 2.14f);
-	
-	return 0;
-}
+	public:
+
+		char a1;
+		int a2;
+		float a3;
+
+		Sample1(char p1, int p2, float p3);
+		~Sample1(void);
+};
+
+#endif
+

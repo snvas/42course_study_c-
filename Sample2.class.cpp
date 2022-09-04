@@ -1,23 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Sample2.class.cpp                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: snovaes <snovaes@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/04 16:12:34 by snovaes           #+#    #+#             */
-/*   Updated: 2022/09/04 17:42:56 by snovaes          ###   ########.fr       */
+/*   Created: 2022/09/04 17:37:00 by snovaes           #+#    #+#             */
+/*   Updated: 2022/09/04 17:45:08 by snovaes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+//usar este formato with inicialization list
+
 #include <iostream>
 #include "Sample2.class.hpp"
-#include "Sample1.class.hpp"
 
-int main(){
+Sample2::Sample2(char p1, int p2, float p3) : a1(p1), a2(p2), a3(p3){
+	std::cout << "Constructor called" << std::endl;
+	std::cout << "this->a1 = " << this->a1 << std::endl;
+	std::cout << "this->a2 = " << this->a2 << std::endl;
+	std::cout << "this->a3 = " << this->a3 << std::endl;
+}
 
-	Sample1 instance1('a', 42, 4.2f);
-	Sample2 instance2('z', 13, 2.14f);
-	
-	return 0;
+Sample2::~Sample2(void){
+	std::cout << "Destructor called" << std::endl;
+	return;
 }
