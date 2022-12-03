@@ -69,20 +69,20 @@ solution: 	first change the number to binary, 100000010
 #### Unsigned integer representation
 example of storing unsigned integer in two different computers
 
-Decimal		8-bit allocation		16-bit allocation
-7				00000111			0000000000000111
-234				11101010			0000000011101010
-258				overflow			0000000100000010
-24,760			overflow			0110000010111000
-1,245,678		overflow			overflow
+- Decimal		8-bit allocation		16-bit allocation
+- 7				00000111			0000000000000111
+- 234			11101010			0000000011101010
+- 258			overflow			0000000100000010
+- 24,760		overflow			0110000010111000
+- 1,245,678		overflow			overflow
 
 
 ### Signed Integer representation
 - Sign and magnitude
-	Left most significant bit represent the sign 
+	- Left most significant bit represent the sign 
 	of the integer and remaining bits represent the magnitude
-	If the left bit is 1 the value is negative
-	If the left bit is 0 the value is positive
+	- If the left bit is 1 the value is negative
+	- If the left bit is 0 the value is positive
 
 ex: store +7 in an 8-bit memory location using sign and magnitude representation
 sol: first change the number to binary, 111
