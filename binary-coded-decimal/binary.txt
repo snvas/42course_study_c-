@@ -145,3 +145,4 @@ Decimal		8-bit allocation		16-bit allocation
 -124			10000100			1111111110000100
 +24,760			overflow			0110000010111000
 -24,760			overflow			1001111101001000
+
