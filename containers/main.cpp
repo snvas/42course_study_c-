@@ -118,6 +118,30 @@ int main() {
 		for (Vector<int>::Iterator it = values.begin(); 
 			it != values.end(); it++)
 			std::cout << *it << std::endl;
+		std::cout << "----------------------------" << std::endl;
+	}
+	{
+		Vector<std::string> values;
+		values.EmplaceBack("1");
+		values.EmplaceBack("2");
+		values.EmplaceBack("3");
+		values.EmplaceBack("Soraia");
+		values.EmplaceBack("4");
+		values.EmplaceBack("5");
+		
+		std::cout << "Not using iterators:\n";
+		for (size_t i = 0; i < values.Size(); i++){
+			std::cout << values[i] << std::endl;
+		}
+		
+		std::cout << "Range-based for loop\n";
+		for (auto& value : values)
+			std::cout << value << std::endl;
+		
+		std::cout << "Iterators:\n";
+		for (Vector<std::string>::Iterator it = values.begin(); 
+			it != values.end(); it++)
+			std::cout << *it << std::endl;
 	}
 #if 0
 	{

@@ -135,7 +135,7 @@ template <typename T> class Vector {
 			m_Size = newCapacity;
 
 		for (size_t i = 0; i < m_Size; i++)
-			newBlock[i] = std::move(m_Data[i]);
+			new(&newBlock[i]) T(std::move(m_Data[i]));
 
 		for(size_t i = 0; i < m_Size; i++){
 			m_Data[i].~T();
